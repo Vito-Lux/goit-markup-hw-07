@@ -1,0 +1,13 @@
+.footer__logo {
+  display: inline-block;
+  margin-bottom: 20px;
+  font-family: $secondary-font;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: calc(100% + 5px);
+  color: $main-bg-color;
+
+  & span {
+    color: $accent-color;
+  }
+}

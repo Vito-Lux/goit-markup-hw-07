@@ -1,0 +1,51 @@
+@mixin spacedFlex($type: space-between) {
+   display: flex;
+   justify-content: $type;
+   align-items: center;
+}
+
+@mixin centeredFlex($type: center) {
+   display: flex;
+   justify-content: $type;
+   align-items: center;
+}
+
+@mixin reverseFlex($type: row-reverse) {
+   display: flex;
+   flex-direction: $type;
+   align-items: center;
+}
+
+@mixin verticalFlexCenter {
+   display: flex;
+   justify-content: center;
+}
+
+@mixin columnFlexDirection {
+   display: flex;
+   flex-direction: column;
+}
+
+@mixin alignFlexCenter {
+   display: flex;
+   align-items: center;
+}
+
+@mixin transitionRules($attribute) {
+   transition-duration: $transition-duration;
+   transition-property: $attribute;
+   transition-timing-function: $transition-timing-function;
+}
+
+@mixin listFlexGap {
+   display: flex;
+   flex-wrap: wrap;
+   margin-top: calc(-1 * #{$flexbox-gap});
+   margin-left: calc(-1 * #{$flexbox-gap});
+}
+
+@mixin itemFlexGap($number) {
+   margin-top: $flexbox-gap;
+   margin-left: $flexbox-gap;
+   flex-basis: calc((100% - $number * #{$flexbox-gap}) / $number);
+}
