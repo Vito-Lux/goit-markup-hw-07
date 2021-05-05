@@ -21,16 +21,13 @@
 .after-hero__subtitle {
   padding-top: 30px;
   padding-bottom: 10px;
-  font-weight: 700;
-  font-size: $font-standard-size;
-  line-height: calc(100% + 2px);
+  @include fontLineWeightLetter(14, 16, 700, base);
   text-transform: uppercase;
   color: $main-text-color;
 }
 
 .after-hero__text {
-  font-size: $font-standard-size;
-  line-height: calc(100% + 10px);
+  @include fontLineWeightLetter(14, 24, 400, base);
   color: $additional-text-color;
 }
 

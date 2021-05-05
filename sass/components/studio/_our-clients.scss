@@ -1,9 +1,7 @@
 .our-clients__title {
   padding-bottom: 50px;
   text-align: center;
-  font-size: 36px;
-  line-height: calc(100% + 6px);
-  font-weight: 700;
+  @include fontLineWeightLetter(36, 42, 700, base);
 }
 
 .our-clients__list {

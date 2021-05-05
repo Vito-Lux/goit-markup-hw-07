@@ -4,13 +4,10 @@
 
 .header-contacts__item a {
   font-family: $main-font;
-  font-weight: 500;
-  font-size: $font-standard-size;
-  line-height: calc(100% + 2px);
-  letter-spacing: 0.02em;
+  @include fontLineWeightLetter(14, 16, 500, base);
   color: $additional-text-color;
 
-  @include transitionRules(fill, color);
+  @include transitionRules(color, fill);
 
   &:hover,
   &:focus {

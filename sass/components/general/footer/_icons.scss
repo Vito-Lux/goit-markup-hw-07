@@ -10,9 +10,7 @@
 
 .footer-icons__text {
   padding-top: 10px;
-  font-size: $font-standard-size;
-  line-height: calc(100% + 2px);
-  font-weight: 700;
+  @include fontLineWeightLetter(14, 16, 700, base);
   text-transform: uppercase;
   color: $main-bg-color;
 }

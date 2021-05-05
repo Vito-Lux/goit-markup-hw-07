@@ -20,9 +20,7 @@
   padding: 6px 22px;
   border-radius: 4px;
   color: $main-text-color;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: calc(100% + 10px);
+  @include fontLineWeightLetter(16, 26, 500, base);
   background-color: $button-bg-color;
 
   @include transitionRules(background-color, color, box-shadow);

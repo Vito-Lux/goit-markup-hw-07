@@ -31,7 +31,7 @@
    align-items: center;
 }
 
-@mixin transitionRules($attribute) {
+@mixin transitionRules($attribute...) {
    transition-duration: $transition-duration;
    transition-property: $attribute;
    transition-timing-function: $transition-timing-function;
@@ -47,5 +47,27 @@
 @mixin itemFlexGap($number) {
    margin-top: $flexbox-gap;
    margin-left: $flexbox-gap;
-   flex-basis: calc((100% - $number * #{$flexbox-gap}) / $number);
+   flex-basis: calc((100% - #{$number} * #{$flexbox-gap}) / #{$number});
+}
+
+@mixin fontLineWeightLetter($font-size, $line-height, $font-weight, $letter-spacing) {
+   font-size: calc(#{$font-size} * 1px);
+   font-weight: $font-weight;
+   line-height: calc(#{$line-height} / #{$font-size});
+
+   @if ($letter-spacing == "base") {
+      letter-spacing: $base-letter-spacing;
+   }
+
+   @if ($letter-spacing == "multi") {
+      letter-spacing: calc(#{$base-letter-spacing} * 2);
+   }
+
+   @if ($letter-spacing == "divide") {
+      letter-spacing: calc(#{$base-letter-spacing} / 3);
+   }
+
+   @if ($letter-spacing == "convert") {
+      letter-spacing: calc((#{$pixel-letter-spacing} / #{$font-size}) * 1em);
+   }
 }
