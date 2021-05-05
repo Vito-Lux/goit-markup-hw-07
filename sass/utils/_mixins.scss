@@ -1,3 +1,5 @@
+// Flex
+
 @mixin spacedFlex($type: space-between) {
    display: flex;
    justify-content: $type;
@@ -31,11 +33,15 @@
    align-items: center;
 }
 
+// Transitions
+
 @mixin transitionRules($attribute...) {
    transition-duration: $transition-duration;
    transition-property: $attribute;
    transition-timing-function: $transition-timing-function;
 }
+
+// Flexbox-gap
 
 @mixin listFlexGap {
    display: flex;
@@ -49,6 +55,8 @@
    margin-left: $flexbox-gap;
    flex-basis: calc((100% - #{$number} * #{$flexbox-gap}) / #{$number});
 }
+
+// Fs-lh-fw-ls
 
 @mixin fontLineWeightLetter($font-size, $line-height, $font-weight, $letter-spacing) {
    font-size: calc(#{$font-size} * 1px);
@@ -70,4 +78,14 @@
    @if ($letter-spacing == "convert") {
       letter-spacing: calc((#{$pixel-letter-spacing} / #{$font-size}) * 1em);
    }
+}
+
+// Container
+
+@mixin containerWidth {
+   max-width: calc(#{$layoutWidth} - #{$sidePadding});
+   margin-left: auto;
+   margin-right: auto;
+   padding-left: 15px;
+   padding-right: 15px;
 }
