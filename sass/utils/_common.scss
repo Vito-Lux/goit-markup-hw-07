@@ -50,7 +50,7 @@ button {
 // CSS-common
 
 .container {
-  @include containerWidth();
+  @include containerWidth(work);
 }
 
 .section {

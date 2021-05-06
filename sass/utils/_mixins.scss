@@ -60,30 +60,29 @@
 
 @mixin fontLineWeightLetter($font-size, $line-height, $font-weight, $letter-spacing) {
    font-size: calc(#{$font-size} * 1px);
-   font-weight: $font-weight;
    line-height: calc(#{$line-height} / #{$font-size});
+   font-weight: $font-weight;
 
    @if ($letter-spacing == "base") {
       letter-spacing: $base-letter-spacing;
-   }
-
-   @if ($letter-spacing == "multi") {
+   } @else if ($letter-spacing == "multi") {
       letter-spacing: calc(#{$base-letter-spacing} * 2);
-   }
-
-   @if ($letter-spacing == "divide") {
+   } @else if ($letter-spacing == "divide") {
       letter-spacing: calc(#{$base-letter-spacing} / 3);
-   }
-
-   @if ($letter-spacing == "convert") {
+   } @else if ($letter-spacing == "convert") {
       letter-spacing: calc((#{$pixel-letter-spacing} / #{$font-size}) * 1em);
    }
 }
 
 // Container
 
-@mixin containerWidth {
-   max-width: calc(#{$layoutWidth} - #{$sidePadding});
+@mixin containerWidth($layoutWidth) {
+   @if ($layoutWidth == "work") {
+      max-width: $fullLayoutWidth - $sidePadding;
+   } @else if ($layoutWidth == "full") {
+      max-width: $fullLayoutWidth;
+   }
+
    margin-left: auto;
    margin-right: auto;
    padding-left: 15px;
