@@ -4,7 +4,7 @@
 
 .header-contacts__item a {
   font-family: $main-font;
-  @include fontLineWeightLetter(14, 16, 500, base);
+  @include fontLineWeightLetter(14, 16, med, base);
   color: $additional-text-color;
 
   @include transitionRules(color, fill);

@@ -5,7 +5,7 @@
 .our-work__title {
   text-align: center;
   padding-bottom: 50px;
-  @include fontLineWeightLetter(36, 42, 700, convert);
+  @include fontLineWeightLetter(36, 42, bold, vert);
   color: $main-text-color;
 }
 
@@ -30,7 +30,7 @@
   padding: 28px 82px;
   width: 100%;
   text-align: center;
-  @include fontLineWeightLetter(14, 16, 700, base);
+  @include fontLineWeightLetter(14, 16, bold, base);
   text-transform: uppercase;
   color: $main-bg-color;
   background-color: rgba(47, 48, 58, 0.8);

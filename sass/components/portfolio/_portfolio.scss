@@ -30,7 +30,7 @@
     width: 100%;
     height: 100%;
     padding: 63px 24px;
-    @include fontLineWeightLetter(18, 28, 400, base);
+    @include fontLineWeightLetter(18, 28, norm, base);
     color: $main-bg-color;
     background-color: $accent-color;
 
@@ -57,13 +57,13 @@
 
   &__subtitle {
     font-family: $main-font;
-    @include fontLineWeightLetter(18, 36, 700, multi);
+    @include fontLineWeightLetter(18, 36, bold, dbl);
     color: $main-text-color;
   }
 
   &__text {
     font-family: $main-font;
-    @include fontLineWeightLetter(16, 30, 400, base);
+    @include fontLineWeightLetter(16, 30, norm, base);
     color: $additional-text-color;
   }
 }

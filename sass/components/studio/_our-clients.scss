@@ -1,7 +1,7 @@
 .our-clients__title {
   padding-bottom: 50px;
   text-align: center;
-  @include fontLineWeightLetter(36, 42, 700, base);
+  @include fontLineWeightLetter(36, 42, bold, base);
 }
 
 .our-clients__list {

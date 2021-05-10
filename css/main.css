@@ -183,7 +183,7 @@ svg {
 }
 
 .container {
-  max-width: calc(1600px - 400px);
+  max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
   padding-left: 15px;
@@ -251,9 +251,9 @@ ul {
 .header-nav__logo {
   margin-right: 92px;
   font-family: "Raleway", sans-serif;
-  font-size: calc(26 * 1px);
+  font-size: 26px;
+  line-height: 1.19;
   font-weight: 700;
-  line-height: calc(31 / 26);
   letter-spacing: 0.03em;
 }
 
@@ -278,9 +278,9 @@ ul {
 .header-nav__link {
   position: relative;
   font-family: "Roboto", sans-serif;
-  font-size: calc(14 * 1px);
+  font-size: 14px;
+  line-height: 1.14;
   font-weight: 500;
-  line-height: calc(16 / 14);
   letter-spacing: 0.03em;
   color: #212121;
   -webkit-transition-duration: 250ms;
@@ -315,9 +315,9 @@ ul {
 
 .header-contacts__item a {
   font-family: "Roboto", sans-serif;
-  font-size: calc(14 * 1px);
+  font-size: 14px;
+  line-height: 1.14;
   font-weight: 500;
-  line-height: calc(16 / 14);
   letter-spacing: 0.03em;
   color: #757575;
   -webkit-transition-duration: 250ms;
@@ -392,9 +392,9 @@ ul {
   display: inline-block;
   margin-bottom: 20px;
   font-family: "Raleway", sans-serif;
-  font-size: calc(26 * 1px);
+  font-size: 26px;
+  line-height: 1.19;
   font-weight: 700;
-  line-height: calc(31 / 26);
   letter-spacing: 0.03em;
   color: #ffffff;
 }
@@ -405,9 +405,9 @@ ul {
 
 .footer__address {
   padding-bottom: 10px;
-  font-size: calc(14 * 1px);
+  font-size: 14px;
+  line-height: 1.71;
   font-weight: 400;
-  line-height: calc(24 / 14);
   letter-spacing: 0.03em;
   font-style: normal;
   color: #ffffff;
@@ -415,9 +415,9 @@ ul {
 
 .footer-contacts__item a {
   width: calc(100% / 12 * 8);
-  font-size: calc(14 * 1px);
+  font-size: 14px;
+  line-height: 1.71;
   font-weight: 400;
-  line-height: calc(24 / 14);
   letter-spacing: 0.03em;
   color: #ffffff;
   -webkit-transition-duration: 250ms;
@@ -459,9 +459,9 @@ ul {
 
 .footer-icons__text {
   padding-top: 10px;
-  font-size: calc(14 * 1px);
+  font-size: 14px;
+  line-height: 1.14;
   font-weight: 700;
-  line-height: calc(16 / 14);
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #ffffff;
@@ -529,9 +529,9 @@ ul {
   display: inline-flex;
   padding-top: 10px;
   padding-bottom: 20px;
-  font-size: calc(14 * 1px);
+  font-size: 14px;
+  line-height: 1.14;
   font-weight: 700;
-  line-height: calc(16 / 14);
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #ffffff;
@@ -560,9 +560,9 @@ ul {
   margin-right: 12px;
   border-radius: 4px;
   border: 1px solid rgba(255, 255, 255, 0.3);
-  font-size: calc(16 * 1px);
+  font-size: 16px;
+  line-height: 1.25;
   font-weight: 400;
-  line-height: calc(20 / 16);
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
   background-color: #2f303a;
@@ -580,9 +580,9 @@ ul {
   padding-top: 10px;
   padding-bottom: 10px;
   padding-left: 29px;
-  font-size: calc(16 * 1px);
+  font-size: 16px;
+  line-height: 1.88;
   font-weight: 700;
-  line-height: calc(30 / 16);
   letter-spacing: 0.03em;
   text-transform: capitalize;
   border-radius: 4px;
@@ -638,10 +638,10 @@ ul {
   padding-bottom: 30px;
   color: #ffffff;
   font-family: "Roboto", sans-serif;
-  font-size: calc(44 * 1px);
+  font-size: 44px;
+  line-height: 1.36;
   font-weight: 900;
-  line-height: calc(60 / 44);
-  letter-spacing: calc(0.03em * 2);
+  letter-spacing: 0.06em;
   text-transform: uppercase;
 }
 
@@ -663,10 +663,10 @@ ul {
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   font-family: "Roboto", sans-serif;
-  font-size: calc(16 * 1px);
+  font-size: 16px;
+  line-height: 1.88;
   font-weight: 700;
-  line-height: calc(30 / 16);
-  letter-spacing: calc(0.03em * 2);
+  letter-spacing: 0.06em;
   background-color: #2196f3;
   color: #ffffff;
   -webkit-transition-duration: 250ms;
@@ -718,18 +718,18 @@ ul {
 .after-hero__subtitle {
   padding-top: 30px;
   padding-bottom: 10px;
-  font-size: calc(14 * 1px);
+  font-size: 14px;
+  line-height: 1.14;
   font-weight: 700;
-  line-height: calc(16 / 14);
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #212121;
 }
 
 .after-hero__text {
-  font-size: calc(14 * 1px);
+  font-size: 14px;
+  line-height: 1.71;
   font-weight: 400;
-  line-height: calc(24 / 14);
   letter-spacing: 0.03em;
   color: #757575;
 }
@@ -745,10 +745,10 @@ ul {
 .our-work__title {
   text-align: center;
   padding-bottom: 50px;
-  font-size: calc(36 * 1px);
+  font-size: 36px;
+  line-height: 1.17;
   font-weight: 700;
-  line-height: calc(42 / 36);
-  letter-spacing: calc((1.08 / 36) * 1em);
+  letter-spacing: 0.03em;
   color: #212121;
 }
 
@@ -782,9 +782,9 @@ ul {
   padding: 28px 82px;
   width: 100%;
   text-align: center;
-  font-size: calc(14 * 1px);
+  font-size: 14px;
+  line-height: 1.14;
   font-weight: 700;
-  line-height: calc(16 / 14);
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #ffffff;
@@ -806,9 +806,9 @@ ul {
 
 .our-team__title {
   text-align: center;
-  font-size: calc(36 * 1px);
+  font-size: 36px;
+  line-height: 1.17;
   font-weight: 700;
-  line-height: calc(42 / 36);
   letter-spacing: 0.03em;
   color: #212121;
   padding-bottom: 50px;
@@ -846,17 +846,17 @@ ul {
 
 .our-team__subtitle {
   padding-bottom: 10px;
-  font-size: calc(16 * 1px);
+  font-size: 16px;
+  line-height: 1.13;
   font-weight: 500;
-  line-height: calc(18 / 16);
   letter-spacing: 0.03em;
   color: #212121;
 }
 
 .our-team__text {
-  font-size: calc(16 * 1px);
+  font-size: 16px;
+  line-height: 1.13;
   font-weight: 400;
-  line-height: calc(18 / 16);
   letter-spacing: 0.03em;
   color: #757575;
 }
@@ -920,9 +920,9 @@ ul {
 .our-clients__title {
   padding-bottom: 50px;
   text-align: center;
-  font-size: calc(36 * 1px);
+  font-size: 36px;
+  line-height: 1.17;
   font-weight: 700;
-  line-height: calc(42 / 36);
   letter-spacing: 0.03em;
 }
 
@@ -1054,9 +1054,9 @@ ul {
 
 .modal__title {
   padding: 40px 40px 6px 40px;
-  font-size: calc(20 * 1px);
+  font-size: 20px;
+  line-height: 1.15;
   font-weight: 700;
-  line-height: calc(23 / 20);
   letter-spacing: 0.03em;
   text-align: center;
 }
@@ -1066,10 +1066,10 @@ ul {
   padding-left: 40px;
   padding-right: 40px;
   padding-top: 10px;
-  font-size: calc(12 * 1px);
+  font-size: 12px;
+  line-height: 1.17;
   font-weight: 400;
-  line-height: calc(14 / 12);
-  letter-spacing: calc(0.03em / 3);
+  letter-spacing: 0.01em;
   color: #757575;
 }
 
@@ -1236,9 +1236,9 @@ ul {
   padding: 6px 22px;
   border-radius: 4px;
   color: #212121;
-  font-size: calc(16 * 1px);
+  font-size: 16px;
+  line-height: 1.63;
   font-weight: 500;
-  line-height: calc(26 / 16);
   letter-spacing: 0.03em;
   background-color: #f5f4fa;
   -webkit-transition-duration: 250ms;
@@ -1304,9 +1304,9 @@ ul {
   width: 100%;
   height: 100%;
   padding: 63px 24px;
-  font-size: calc(18 * 1px);
+  font-size: 18px;
+  line-height: 1.56;
   font-weight: 400;
-  line-height: calc(28 / 18);
   letter-spacing: 0.03em;
   color: #ffffff;
   background-color: #2196f3;
@@ -1350,18 +1350,18 @@ ul {
 
 .portfolio-content__subtitle {
   font-family: "Roboto", sans-serif;
-  font-size: calc(18 * 1px);
+  font-size: 18px;
+  line-height: 2;
   font-weight: 700;
-  line-height: calc(36 / 18);
-  letter-spacing: calc(0.03em * 2);
+  letter-spacing: 0.06em;
   color: #212121;
 }
 
 .portfolio-content__text {
   font-family: "Roboto", sans-serif;
-  font-size: calc(16 * 1px);
+  font-size: 16px;
+  line-height: 1.88;
   font-weight: 400;
-  line-height: calc(30 / 16);
   letter-spacing: 0.03em;
   color: #757575;
 }

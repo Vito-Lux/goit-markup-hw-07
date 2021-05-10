@@ -2,7 +2,7 @@
   display: inline-block;
   margin-bottom: 20px;
   font-family: $secondary-font;
-  @include fontLineWeightLetter(26, 31, 700, base);
+  @include fontLineWeightLetter(26, 31, bold, base);
   color: $main-bg-color;
 
   & span {

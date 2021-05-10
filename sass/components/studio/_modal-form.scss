@@ -4,7 +4,7 @@
 
 .modal__title {
   padding: 40px 40px 6px 40px;
-  @include fontLineWeightLetter(20, 23, 700, base);
+  @include fontLineWeightLetter(20, 23, bold, base);
   text-align: center;
 }
 
@@ -13,7 +13,7 @@
   padding-left: 40px;
   padding-right: 40px;
   padding-top: 10px;
-  @include fontLineWeightLetter(12, 14, 400, divide);
+  @include fontLineWeightLetter(12, 14, norm, div);
   color: $additional-text-color;
 }
 

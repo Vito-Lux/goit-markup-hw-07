@@ -1,13 +1,13 @@
 .footer__address {
   padding-bottom: 10px;
-  @include fontLineWeightLetter(14, 24, 400, base);
+  @include fontLineWeightLetter(14, 24, norm, base);
   font-style: normal;
   color: $main-bg-color;
 }
 
 .footer-contacts__item a {
   width: calc(100% / 12 * 8);
-  @include fontLineWeightLetter(14, 24, 400, base);
+  @include fontLineWeightLetter(14, 24, norm, base);
   color: $main-bg-color;
 
   @include transitionRules(color);

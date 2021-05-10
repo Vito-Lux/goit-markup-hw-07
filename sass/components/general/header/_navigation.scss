@@ -5,7 +5,7 @@
 .header-nav__logo {
   margin-right: 92px;
   font-family: $secondary-font;
-  @include fontLineWeightLetter(26, 31, 700, base);
+  @include fontLineWeightLetter(26, 31, bold, base);
 
   & span {
     color: $accent-color;
@@ -27,7 +27,7 @@
 .header-nav__link {
   position: relative;
   font-family: $main-font;
-  @include fontLineWeightLetter(14, 16, 500, base);
+  @include fontLineWeightLetter(14, 16, med, base);
   color: $main-text-color;
 
   @include transitionRules(color);

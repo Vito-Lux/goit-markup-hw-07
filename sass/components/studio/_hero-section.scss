@@ -20,7 +20,7 @@
   padding-bottom: 30px;
   color: $main-bg-color;
   font-family: $main-font;
-  @include fontLineWeightLetter(44, 60, 900, multi);
+  @include fontLineWeightLetter(44, 60, eb, dbl);
   text-transform: uppercase;
 }
 
@@ -36,7 +36,7 @@
   border-radius: 4px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   font-family: $main-font;
-  @include fontLineWeightLetter(16, 30, 700, multi);
+  @include fontLineWeightLetter(16, 30, bold, dbl);
   background-color: $accent-color;
   color: $main-bg-color;
 
