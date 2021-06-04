@@ -50,6 +50,7 @@ button {
 // CSS-common
 
 .container {
+  // max-width: 1200px;
   @include containerWidth(work);
 }
 
@@ -60,4 +61,8 @@ button {
 
 .visually-hidden {
   @extend %visually-hidden;
+}
+
+.current-link a:visited {
+  color: $accent-color;
 }

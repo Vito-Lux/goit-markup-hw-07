@@ -54,6 +54,7 @@
   min-height: 120px;
   resize: none;
   margin-top: 4px;
+  margin-bottom: 25px;
   padding: 12px 16px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
@@ -70,7 +71,6 @@
 
 .modal__agreement {
   @include verticalFlexCenter();
-  padding-top: 25px;
 }
 
 .modal__agreement-label::before {
@@ -95,6 +95,7 @@
 .modal__agreement-label {
   display: inline-flex;
   align-items: center;
+  margin-bottom: 30px;
 }
 
 .modal__agreement-link {
@@ -106,5 +107,4 @@
 
 .modal__btn {
   @include verticalFlexCenter();
-  padding-top: 30px;
 }

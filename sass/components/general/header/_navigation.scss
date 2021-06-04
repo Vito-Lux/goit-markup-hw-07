@@ -1,10 +1,16 @@
 .header-nav {
+  // display: flex;
+  // align-items: center;
   @include alignFlexCenter();
 }
 
 .header-nav__logo {
   margin-right: 92px;
   font-family: $secondary-font;
+  // font-size: 26px;
+  // line-height: 31px;
+  // font-weight: 700;
+  // letter-spacing: 0.03em;
   @include fontLineWeightLetter(26, 31, bold, base);
 
   & span {
@@ -27,9 +33,16 @@
 .header-nav__link {
   position: relative;
   font-family: $main-font;
+  // font-size: 14px;
+  // line-height: 16px;
+  // font-weight: 500;
+  // letter-spacing: 0.03em;
   @include fontLineWeightLetter(14, 16, med, base);
   color: $main-text-color;
 
+  // transition-duration: $transition-duration;
+  // transition-property: color;
+  // transition-timing-function: $transition-timing-function;
   @include transitionRules(color);
 
   &:hover,
@@ -47,5 +60,6 @@
   display: block;
   height: 4px;
   width: 100%;
+  border-radius: 2px;
   background-color: $accent-color;
 }

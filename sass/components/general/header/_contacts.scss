@@ -4,9 +4,16 @@
 
 .header-contacts__item a {
   font-family: $main-font;
+  // font-size: 14px;
+  // line-height: 16px;
+  // font-weight: 500;
+  // letter-spacing: 0.03em;
   @include fontLineWeightLetter(14, 16, med, base);
   color: $additional-text-color;
 
+  // transition-duration: $transition-duration;
+  // transition-property: color, fill;
+  // transition-timing-function: $transition-timing-function;
   @include transitionRules(color, fill);
 
   &:hover,
@@ -25,21 +32,23 @@
 }
 
 .header-contacts__mail {
+  // display: flex;
+  // flex-direction: row-reverse;
+  // align-items: center;
   @include reverseFlex();
 
   &-svg {
-    width: 16px;
-    height: 12px;
     margin-right: 10px;
   }
 }
 
 .header-contacts__tel {
+  // display: flex;
+  // flex-direction: row-reverse;
+  // align-items: center;
   @include reverseFlex();
 
   &-svg {
-    width: 10px;
-    height: 16px;
     margin-right: 10px;
   }
 }

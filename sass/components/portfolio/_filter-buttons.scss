@@ -1,28 +1,35 @@
-.filter__list {
+.filter-list {
+  // display: flex;
+  // justify-content: center;
+  // align-items: center;
   @include centeredFlex();
   margin-bottom: 50px;
 }
 
-.filter__item:not(:last-child) {
-  margin-left: 8px;
+.filter-list__item:not(:last-child) {
+  margin-right: 8px;
 }
 
-.filter__item:last-child {
-  margin-left: 8px;
+.filter-list__item:last-child {
   margin-right: 0;
 }
 
-.filter__button {
-  font-weight: 500;
-  font-size: 16px;
+.filter-list__button {
   min-height: 38px;
   min-width: 73px;
   padding: 6px 22px;
   border-radius: 4px;
   color: $main-text-color;
+  // font-size: 16px;
+  // line-height: 26px;
+  // font-weight: 500;
+  // letter-spacing: 0.03em;
   @include fontLineWeightLetter(16, 26, med, base);
   background-color: $button-bg-color;
 
+  // transition-duration: $transition-duration;
+  // transition-property: background-color, color, box-shadow;
+  // transition-timing-function: $transition-timing-function;
   @include transitionRules(background-color, color, box-shadow);
 
   &:hover,

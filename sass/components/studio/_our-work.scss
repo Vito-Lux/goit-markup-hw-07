@@ -1,24 +1,26 @@
-.our-work .container {
+.our-work {
   padding-bottom: 94px;
 }
 
 .our-work__title {
-  text-align: center;
-  padding-bottom: 50px;
+  margin-bottom: 50px;
   @include fontLineWeightLetter(36, 42, bold, vert);
+  text-align: center;
   color: $main-text-color;
 }
 
-.our-work__list {
+.our-work-list {
   @include listFlexGap();
+  margin-top: 0;
 }
 
-.our-work__item {
+.our-work-list__item {
   position: relative;
   @include itemFlexGap(3);
+  margin-top: 0;
 }
 
-.our-work__img {
+.our-work-list__img {
   min-width: 370px;
   min-height: 294px;
 }
@@ -36,6 +38,6 @@
   background-color: rgba(47, 48, 58, 0.8);
 }
 
-.our-work__list li:last-child {
+.our-work-list li:last-child {
   margin-right: 0;
 }

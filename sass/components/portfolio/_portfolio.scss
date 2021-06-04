@@ -1,20 +1,34 @@
-.portfolio__list {
+.portfolio-list {
+  //  display: flex;
+  //  flex-wrap: wrap;
+  //  margin-top: calc(-1 * #{$flexbox-gap});
+  //  margin-left: calc(-1 * #{$flexbox-gap});
   @include listFlexGap();
 }
 
-.portfolio__item {
+.portfolio-list__item {
+  // margin-top: $flexbox-gap;
+  // margin-left: $flexbox-gap;
+  // flex-basis: calc((100% - #{$number} * #{$flexbox-gap}) / #{$number});
   @include itemFlexGap(3);
 
+  // transition-duration: $transition-duration;
+  // transition-property: box-shadow;
+  // transition-timing-function: $transition-timing-function;
   @include transitionRules(box-shadow);
-
-  &:hover,
-  &:focus {
-    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
-  }
 }
 
-.portfolio__item:last-child {
+.portfolio-list__item:last-child {
   margin-right: 0;
+}
+
+.portfolio-list__link {
+  display: block;
+}
+
+.portfolio-list__link:hover,
+.portfolio-list__link:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 // Overlay
@@ -30,10 +44,17 @@
     width: 100%;
     height: 100%;
     padding: 63px 24px;
+    // font-size: 18px;
+    // line-height: 28px;
+    // font-weight: 400;
+    // letter-spacing: 0.03em;
     @include fontLineWeightLetter(18, 28, norm, base);
     color: $main-bg-color;
     background-color: $accent-color;
 
+    // transition-duration: $transition-duration;
+    // transition-property: transform;
+    // transition-timing-function: $transition-timing-function;
     @include transitionRules(transform);
 
     transform: translateY(100%);
@@ -42,11 +63,14 @@
   }
 }
 
-.portfolio__item:hover .portfolio__overlay-text {
+.portfolio-list__link:hover .portfolio__overlay-text,
+.portfolio-list__link:focus .portfolio__overlay-text {
   transform: translateY(0);
 }
 
 .portfolio-content {
+  // display: flex;
+  // flex-direction: column;
   @include columnFlexDirection();
   justify-content: center;
   align-items: flex-start;
@@ -57,12 +81,20 @@
 
   &__subtitle {
     font-family: $main-font;
+    // font-size: 18px;
+    // line-height: 36px;
+    // font-weight: 700;
+    // letter-spacing: 0.06em;
     @include fontLineWeightLetter(18, 36, bold, dbl);
     color: $main-text-color;
   }
 
   &__text {
     font-family: $main-font;
+    // font-size: 16px;
+    // line-height: 30px;
+    // font-weight: 400;
+    // letter-spacing: 0.03em;
     @include fontLineWeightLetter(16, 30, norm, base);
     color: $additional-text-color;
   }

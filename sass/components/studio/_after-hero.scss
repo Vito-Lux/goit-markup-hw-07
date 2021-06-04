@@ -1,36 +1,32 @@
-.after-hero__list {
+.after-hero-list {
   @include listFlexGap();
+  margin-top: 0;
 }
 
-.after-hero__item {
+.after-hero-list__item {
   @include itemFlexGap(4);
+  margin-top: 0;
 }
 
 .after-hero-img {
+  @include centeredFlex();
+  padding: 25px 0;
+  margin-bottom: 30px;
   background-color: $button-bg-color;
-  max-width: 270px;
-  max-height: 120px;
-  padding: 25px 100px;
 }
 
-.after-hero__svg {
-  min-height: 70px;
-  min-width: 70px;
-}
-
-.after-hero__subtitle {
-  padding-top: 30px;
-  padding-bottom: 10px;
+.after-hero-list__subtitle {
+  margin-bottom: 10px;
   @include fontLineWeightLetter(14, 16, bold, base);
   text-transform: uppercase;
   color: $main-text-color;
 }
 
-.after-hero__text {
+.after-hero-list__text {
   @include fontLineWeightLetter(14, 24, norm, base);
   color: $additional-text-color;
 }
 
-.after-hero__list li:last-child {
+.after-hero-list li:last-child {
   margin-right: 0;
 }

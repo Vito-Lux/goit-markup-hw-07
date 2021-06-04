@@ -1,9 +1,12 @@
 .header {
   border-bottom: 1px solid $header-border-color;
+}
 
-  & .container {
-    @include spacedFlex();
-    padding-top: 24px;
-    padding-bottom: 24px;
-  }
+.header-container {
+  // display: flex;
+  // justify-content: space-between;
+  // align-items: center;
+  @include spacedFlex();
+  padding-top: 24px;
+  padding-bottom: 24px;
 }

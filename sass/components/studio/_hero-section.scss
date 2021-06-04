@@ -1,35 +1,29 @@
 .hero {
+  padding-bottom: 200px;
+  padding-top: 200px;
   background-image: $line-grad, url(../images/hero_img.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-
-  & .container {
-    max-width: 1600px;
-    padding-bottom: 200px;
-    padding-top: 200px;
-  }
-}
-
-.hero-text {
-  @include verticalFlexCenter;
 }
 
 .hero__title {
-  text-align: center;
+  @include verticalFlexCenter;
+  margin-right: auto;
+  margin-left: auto;
   max-width: 696px;
-  padding-bottom: 30px;
+  margin-bottom: 30px;
+  text-align: center;
   color: $main-bg-color;
   font-family: $main-font;
   @include fontLineWeightLetter(44, 60, eb, dbl);
   text-transform: uppercase;
 }
 
-.hero-btn {
-  @include verticalFlexCenter;
-}
-
 .hero__button,
 .global-btn {
+  @include verticalFlexCenter;
+  margin-left: auto;
+  margin-right: auto;
   min-height: 50px;
   min-width: 200px;
   padding: 10px 32px;

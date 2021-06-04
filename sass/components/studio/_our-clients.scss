@@ -1,22 +1,23 @@
 .our-clients__title {
-  padding-bottom: 50px;
+  margin-bottom: 50px;
   text-align: center;
   @include fontLineWeightLetter(36, 42, bold, base);
 }
 
-.our-clients__list {
+.our-clients-list {
   @include listFlexGap();
+  margin-top: 0;
 }
 
-.our-clients__item {
+.our-clients-list__item {
   @include alignFlexCenter();
   @include itemFlexGap(6);
-
+  margin-top: 0;
   max-width: 170px;
   max-height: 92px;
 }
 
-.our-clients__link {
+.our-clients-list__link {
   padding: 16px 32px;
   fill: $socials-main-color;
   border: 1px solid $socials-main-color;
@@ -31,7 +32,7 @@
   }
 }
 
-.our-clients__img {
+.our-clients-list__img {
   max-height: 60px;
   max-width: 106px;
 }
