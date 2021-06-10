@@ -514,11 +514,6 @@ ul {
   fill: #ffffff;
 }
 
-.footer-icons-list__img {
-  width: 20px;
-  height: 20px;
-}
-
 .subscribe__form {
   margin-left: 94px;
 }
@@ -781,7 +776,7 @@ ul {
   min-height: 294px;
 }
 
-.our-work__text {
+.our-work-list__text {
   position: absolute;
   bottom: 0;
   display: block;
@@ -838,7 +833,7 @@ ul {
   margin-right: 0;
 }
 
-.our-team__content {
+.our-team-list__content {
   padding: 30px 0;
   text-align: center;
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -847,7 +842,7 @@ ul {
   background-color: #ffffff;
 }
 
-.our-team__subtitle {
+.our-team-list__subtitle {
   margin-bottom: 10px;
   font-size: 16px;
   line-height: 1.13;
@@ -856,7 +851,7 @@ ul {
   color: #212121;
 }
 
-.our-team__text {
+.our-team-list__text {
   font-size: 16px;
   line-height: 1.13;
   font-weight: 400;
@@ -865,7 +860,7 @@ ul {
   margin-bottom: 16px;
 }
 
-.our-team-icons {
+.social-icons-list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -877,15 +872,15 @@ ul {
           align-items: center;
 }
 
-.our-team-icons__item:not(:last-child) {
+.social-icons-list__item:not(:last-child) {
   margin-right: 10px;
 }
 
-.our-team-icons__item:last-child {
+.social-icons-list__item:last-child {
   margin-right: 0;
 }
 
-.our-team-icons__link {
+.social-icons-list__link {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -907,7 +902,7 @@ ul {
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.our-team-icons__link:hover, .our-team-icons__link:focus {
+.social-icons-list__link:hover, .social-icons-list__link:focus {
   border-radius: 50%;
   background-color: #2196f3;
   fill: #ffffff;
@@ -1291,12 +1286,12 @@ ul {
           box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
-.portfolio__overlay {
+.portfolio-list__overlay {
   position: relative;
   overflow: hidden;
 }
 
-.portfolio__overlay-text {
+.portfolio-list__overlay-text {
   position: absolute;
   top: 0;
   left: 0;
@@ -1322,8 +1317,8 @@ ul {
   opacity: 0.9;
 }
 
-.portfolio-list__link:hover .portfolio__overlay-text,
-.portfolio-list__link:focus .portfolio__overlay-text {
+.portfolio-list__link:hover .portfolio-list__overlay-text,
+.portfolio-list__link:focus .portfolio-list__overlay-text {
   -webkit-transform: translateY(0);
           transform: translateY(0);
 }

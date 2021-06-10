@@ -33,7 +33,7 @@
 
 // Overlay
 
-.portfolio__overlay {
+.portfolio-list__overlay {
   position: relative;
   overflow: hidden;
 
@@ -63,8 +63,8 @@
   }
 }
 
-.portfolio-list__link:hover .portfolio__overlay-text,
-.portfolio-list__link:focus .portfolio__overlay-text {
+.portfolio-list__link:hover .portfolio-list__overlay-text,
+.portfolio-list__link:focus .portfolio-list__overlay-text {
   transform: translateY(0);
 }
 

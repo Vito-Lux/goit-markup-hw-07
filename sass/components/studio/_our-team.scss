@@ -23,7 +23,7 @@
   margin-right: 0;
 }
 
-.our-team__content {
+.our-team-list__content {
   padding: 30px 0;
   text-align: center;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -31,31 +31,31 @@
   background-color: $main-bg-color;
 }
 
-.our-team__subtitle {
+.our-team-list__subtitle {
   margin-bottom: 10px;
   @include fontLineWeightLetter(16, 18, med, base);
   color: $main-text-color;
 }
 
-.our-team__text {
+.our-team-list__text {
   @include fontLineWeightLetter(16, 18, norm, base);
   color: $additional-text-color;
   margin-bottom: 16px;
 }
 
-.our-team-icons {
+.social-icons-list {
   @include centeredFlex();
 }
 
-.our-team-icons__item:not(:last-child) {
+.social-icons-list__item:not(:last-child) {
   margin-right: 10px;
 }
 
-.our-team-icons__item:last-child {
+.social-icons-list__item:last-child {
   margin-right: 0;
 }
 
-.our-team-icons__link {
+.social-icons-list__link {
   @include centeredFlex();
   width: 44px;
   height: 44px;
